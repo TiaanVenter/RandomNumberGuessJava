@@ -14,8 +14,8 @@ public class Main {
         do {
             System.out.print("Please enter your guess: ");
             yourGuess = scanner.nextInt();
-            guesses = guesses + 1;
-        }while(yourGuess > numberGenerated || yourGuess < numberGenerated);
+            guesses++;
+        }while(yourGuess != numberGenerated);
 
         System.out.println("Congrats! You guessed the right number in " + guesses + " guesses! ");
 
