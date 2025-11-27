@@ -15,11 +15,20 @@ public class Main {
             System.out.print("Please enter your guess: ");
             yourGuess = scanner.nextInt();
             guesses++;
+
+            if (yourGuess < numberGenerated) {
+                System.out.println("Too low!");
+            } else if (yourGuess > numberGenerated) {
+                System.out.println("Too high!");
+            }
+
         }while(yourGuess != numberGenerated);
 
         System.out.println("Congrats! You guessed the right number in " + guesses + " guesses! ");
 
         scanner.close();
+
+        System.out.println("Testing something");
     }
 }
 
